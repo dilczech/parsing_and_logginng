@@ -47,7 +47,7 @@ form_h = th_list[9].get_text(strip=True)        # Forma
 time.sleep(1)
 logging.info('Заголовки успешно получены')
 
-with open("output.csv", "w", newline="", encoding="utf-8") as f:
+with open("data/output.csv", "w", newline="", encoding="utf-8") as f:
     cnt=1
     writer = csv.writer(f)
     writer.writerow((number_h, team_h, games_h, wins_h, draws_h, losses_h, goal_diff_h, goals_h, points_h))
